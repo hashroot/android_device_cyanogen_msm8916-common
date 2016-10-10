@@ -161,6 +161,20 @@ on boot
     chown system system /sys/class/leds/blue/risetime
     chown system system /sys/class/leds/blue/falltime
 
+    # Flashlight
+    chown system camera /sys/class/leds/flashlight/brightness
+    chown system camera /sys/class/leds/flashlight/max_brightness
+    chown system camera /sys/class/leds/flashlight/trigger
+    chmod 0660 /sys/class/leds/flashlight/brightness
+    chmod 0660 /sys/class/leds/flashlight/max_brightness
+    chmod 0660 /sys/class/leds/flashlight/trigger
+    chown system camera /sys/class/leds/torch-light0/brightness
+    chown system camera /sys/class/leds/torch-light0/max_brightness
+    chown system camera /sys/class/leds/torch-light0/trigger
+    chmod 0660 /sys/class/leds/torch-light0/brightness
+    chmod 0660 /sys/class/leds/torch-light0/max_brightness
+    chmod 0660 /sys/class/leds/torch-light0/trigger
+
     ## cmhw permissions
     # key disabler
     chown system system /sys/devices/soc.0/78b9000.i2c/i2c-5/5-004a/disable_keys
