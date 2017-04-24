@@ -1,3 +1,4 @@
+TARGET_INIT_VENDOR_LIB := libinit_msm
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -12,3 +13,4 @@ endif
 LOCAL_MODULE := libinit_msm8916
 
 include $(BUILD_STATIC_LIBRARY)
+
