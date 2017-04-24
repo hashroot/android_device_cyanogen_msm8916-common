@@ -1,3 +1,4 @@
+TARGET_INIT_VENDOR_LIB := libinit_msm
 # Init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc \
